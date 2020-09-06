@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>白羊</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.用一个生活案例，描述出面向对象这个概念就比如说，人把大象装进冰箱里。 现实生活中是人先把冰箱打开，再把大象装进冰箱里，之后再把冰箱关上。这是一步一步按流程的，面向过程的。 而面向对象的方法，就是把事物描述为对象，首先定义人，冰箱，大象，三个对象，人能进行装东西这个动作，冰箱能够被打开和被关上，这样，我们只需写个方法，用人把大象装进冰箱里即可。 2. native，volatile关键字作用！各">
+<meta property="og:type" content="article">
+<meta property="og:title" content="白羊">
+<meta property="og:url" content="http://whitesheep7.github.io/2020/09/06/JavaSE%E7%AC%94%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:site_name" content="白羊">
+<meta property="og:description" content="1.用一个生活案例，描述出面向对象这个概念就比如说，人把大象装进冰箱里。 现实生活中是人先把冰箱打开，再把大象装进冰箱里，之后再把冰箱关上。这是一步一步按流程的，面向过程的。 而面向对象的方法，就是把事物描述为对象，首先定义人，冰箱，大象，三个对象，人能进行装东西这个动作，冰箱能够被打开和被关上，这样，我们只需写个方法，用人把大象装进冰箱里即可。 2. native，volatile关键字作用！各">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdn.net/20180430180530963?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rvbmd4dWV4aWU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="article:published_time" content="2020-09-06T11:19:26.724Z">
+<meta property="article:modified_time" content="2020-05-20T15:03:24.447Z">
+<meta property="article:author" content="沈剑心">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20180430180530963?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rvbmd4dWV4aWU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+  
+    <link rel="alternate" href="/atom.xml" title="白羊" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">白羊</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://whitesheep7.GitHub.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-JavaSE笔试题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/06/JavaSE%E7%AC%94%E8%AF%95%E9%A2%98/" class="article-date">
+  <time datetime="2020-09-06T11:19:26.724Z" itemprop="datePublished">2020-09-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h6 id="1-用一个生活案例，描述出面向对象这个概念"><a href="#1-用一个生活案例，描述出面向对象这个概念" class="headerlink" title="1.用一个生活案例，描述出面向对象这个概念"></a>1.用一个生活案例，描述出面向对象这个概念</h6><p>就比如说，人把大象装进冰箱里。</p>
+<p>现实生活中是人先把冰箱打开，再把大象装进冰箱里，之后再把冰箱关上。这是一步一步按流程的，面向过程的。</p>
+<p>而面向对象的方法，就是把事物描述为对象，首先定义人，冰箱，大象，三个对象，人能进行装东西这个动作，冰箱能够被打开和被关上，这样，我们只需写个方法，用人把大象装进冰箱里即可。</p>
+<h6 id="2-native，volatile关键字作用！各举一个-java-中的例子！"><a href="#2-native，volatile关键字作用！各举一个-java-中的例子！" class="headerlink" title="2. native，volatile关键字作用！各举一个 java 中的例子！"></a>2. native，volatile关键字作用！各举一个 java 中的例子！</h6><p>native 常用在方法前，但凡是有这个关键字修饰的方法都没有方法体，只有一个方法的声明。</p>
+<ol>
+<li><p>native 用在类的方法前面，表示这个方法不是用 java 实现的。</p>
+</li>
+<li><p>java 语言是运行在虚拟机上的， java 又是不允许直接访问硬件的，（也就是java安全性的体现）而java想要做一些例如绘图、画线之类的要去操作硬件的事情的话，必然要用到底层一些的调用。 这就引出了native的关键字！ </p>
+<p>native是一个用来修饰方法的关键字!用它修饰的方法，在虚拟机里都有一个与这个java方法同名的函数，去做java想要做的事情！也就是说： 调用到native修饰的方法，其实就是调用虚拟机里的一个同名方法去做要做的事！这也就是为什么native方法都没有方法体的原因！<br>例如Graphics类里有一个drawRect的方法。它的定义就是：public native void drawRect(int x, int y, int width, int height);调用到它的时候，就是告诉虚拟机，我要画一个根据x,y,width,height这些参数定义的矩形！而实际起到作用去画这个矩形的是虚拟机里的一个名为XXXX_XXXX_drawRect的C函数XXX使这个函数的打包路径，和import中的XXX.XXX差不多！ 简单说：其实java根本什么也没做，做的只是一些面向对象的定义（但这些定义也够复杂）而”干实事”的都一些虚拟机里的那些用C写成的函数！</p>
+</li>
+<li><p>使用native关键字说明这个方法是原生函数，也就是这个方法是用C/C++语言实现的，并且被编译成了DLL，由java去调用。 这些函数的实现体在DLL中，JDK的源代码中并不包含，你应该是看不到的。对于不同的平台它们也是不同的。这也是java的底层机制，实际上java就是在不同的平台上调用不同的native方法实现对操作系统的访问的。</p>
+</li>
+<li><p>native的意思就是通知操作系统，这个函数你必须给我实现，因为我要使用。所以native关键字的函数都是操作系统实现的，java只能调用。</p>
+</li>
+<li><p>java是跨平台的语言，既然是跨了平台，所付出的代价就是牺牲一些对底层的控制，而java要实现对底层的控制，就需要一些其他语言的帮助，这个就是native的作用。</p>
+</li>
+</ol>
+<p>volatile是Java提供的一种轻量级的同步机制。Java 语言包含两种内在的同步机制：同步块（或方法）和 volatile 变量，相比于synchronized（synchronized通常称为重量级锁），volatile更轻量级，因为它不会引起线程上下文的切换和调度。但是volatile 变量的同步性较差（有时它更简单并且开销更低），而且其使用也更容易出错。</p>
+<p>volatile可以保证线程可见性且提供了一定的有序性，但是无法保证原子性。在JVM底层volatile是采用“内存屏障”来实现的。观察加入volatile关键字和没有加入volatile关键字时所生成的汇编代码发现，加入volatile关键字时，会多出一个lock前缀指令，lock前缀指令实际上相当于一个内存屏障（也成内存栅栏），内存屏障会提供3个功能：</p>
+<p>I. 它确保指令重排序时不会把其后面的指令排到内存屏障之前的位置，也不会把前面的指令排到内</p>
+<p>存屏障的后面；即在执行到内存屏障这句指令时，在它前面的操作已经全部完成；</p>
+<p>II. 它会强制将对缓存的修改操作立即写入主存；</p>
+<p>III. 如果是写操作，它会导致其他CPU中对应的缓存行无效。</p>
+<h6 id="3-写出结果，分析原因，代码："><a href="#3-写出结果，分析原因，代码：" class="headerlink" title="3.写出结果，分析原因，代码："></a>3.写出结果，分析原因，代码：</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SwitchTest</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">        String param = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">switch</span>(param)&#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&quot;null&quot;</span>:</span><br><span class="line">                System.out.prinln(<span class="string">&quot;null&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;default&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>switch 是一个语法糖。switch语句是先计算 param 变量的排序值，然后与枚举常量的每个排序值进行对比。</p>
+<p>源码中的switch(param) 调用了String 的hashCode方法。</p>
+<p>switch 方法只支持int 类型的匹配，其他基本类型都会被语法糖转换为整型来做判断和匹配。</p>
+<p>总结一下，java switch 参数不能是null，swicth(null)会报java.lang.NullPointerException异常。</p>
+<h6 id="4-线程的五种状态，以及线程常用的方法"><a href="#4-线程的五种状态，以及线程常用的方法" class="headerlink" title="4.线程的五种状态，以及线程常用的方法"></a>4.线程的五种状态，以及线程常用的方法</h6><p>创建-就绪-运行-阻塞-死亡</p>
+<p><img src="https://img-blog.csdn.net/20180430180530963?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Rvbmd4dWV4aWU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>创建：有三种Thread，Runnable，Callable</p>
+<p>就绪：创建了线程之后，调用Thread类的start()方法来启动一个线程，即表示线程进入就绪状态</p>
+<p>运行：当线程获得CPU时间，线程才从就绪状态进入到运行状态！</p>
+<p>阻塞:，可能由于多种原因让线程进入阻塞状态，如：调用==sleep()==方法让线程睡眠，调用==wait()==方法让线程等待，调用==join()==方法、==suspend()==方法（它现已被弃用！）以及阻塞式IO方法。线程让步——yield()方法</p>
+<p>线程让步：暂停当前正在执行的线程对象，并执行其他线程。</p>
+<p>（1）调用yield()方法让当前线程交出CPU权限，让CPU去执行其他线程。</p>
+<p>（2）yield()方法和sleep()方法类似，不会释放锁，但yield()方法不能控制具体交出CPU的时间。</p>
+<p>（3）yield()方法只能让拥有相同优先级的线程获取CPU执行的机会。</p>
+<p>（4）使用yield()方法不会让线程进入阻塞状态，而是让线程从运行状态转换为就绪状态，只需要等待重新获取CPU执行的机会。</p>
+<p>死亡：run()方法的正常退出就让线程进入到死亡状态，还有当一个异常未被捕获而终止了run()方法的执行也将进入到死亡状态！</p>
+<p>使用stop()方法强制使线程退出，但是使用该方法不安全，已经被废弃了！</p>
+<p>使用Thread类的interrupt()方法中断线程。</p>
+<h6 id="通过反射如何创建对象，执行对象的方法，修改对象的字段，如果是私有的该怎么办"><a href="#通过反射如何创建对象，执行对象的方法，修改对象的字段，如果是私有的该怎么办" class="headerlink" title="通过反射如何创建对象，执行对象的方法，修改对象的字段，如果是私有的该怎么办"></a>通过反射如何创建对象，执行对象的方法，修改对象的字段，如果是私有的该怎么办</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//写了半天总算对了，==~~==</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test02</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException </span>&#123;</span><br><span class="line">        Class c1 = Class.forName(<span class="string">&quot;wang.User&quot;</span>);</span><br><span class="line">        <span class="comment">//通过反射调用普通方法</span></span><br><span class="line">        User user3 = (User)c1.newInstance();</span><br><span class="line">        <span class="comment">//通过反射获取一个方法</span></span><br><span class="line">        Method setName = c1.getDeclaredMethod(<span class="string">&quot;setName&quot;</span>, String.class);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//invoke : 激活的意思</span></span><br><span class="line">        <span class="comment">//(对象,&quot;方法的值&quot;)</span></span><br><span class="line">        setName.invoke(user3,<span class="string">&quot;whitesheep&quot;</span>);</span><br><span class="line">        System.out.println(user3.getName());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> TableClass&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@TableClass</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span></span>&#123;</span><br><span class="line">    String name;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>代码题：多线程聊天室</p>
+<ol>
+<li>GUI</li>
+<li>多线程</li>
+<li>集合</li>
+<li>可阅读性</li>
+<li>网络编程</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://whitesheep7.github.io/2020/09/06/JavaSE%E7%AC%94%E8%AF%95%E9%A2%98/" data-id="cker0y4bk0003b0wshxxm5evl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/09/06/Lamda/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/09/06/html5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/09/06/%E6%B3%A8%E8%A7%A3%E5%8F%8D%E5%B0%84/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/06/%E7%94%A8%E6%95%85%E4%BA%8B%E8%AE%B2%E8%A7%A3Markdown/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/06/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vim/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B9%8B%E3%80%8Amysql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E3%80%8B/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/06/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 沈剑心<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

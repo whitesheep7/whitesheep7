@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>白羊</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="之前买了一本《MySQL必知必会》，最终拖拖拉拉用来一个星期的时间才把它看完，关于此书我觉得前面没有多大的难度，和 《计算机网络自顶向下》 比起 还是很简单的，在我觉得比较困难的是存储过程，触发器的那几章，还有的是懂得了一门语言不是重点，重要的是要会使用和经常使用，这两点我还不行。下面我说说学习《MySQL必知必会》遇到的几个问题。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="白羊">
+<meta property="og:url" content="http://whitesheep7.github.io/2020/09/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B9%8B%E3%80%8Amysql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E3%80%8B/index.html">
+<meta property="og:site_name" content="白羊">
+<meta property="og:description" content="之前买了一本《MySQL必知必会》，最终拖拖拉拉用来一个星期的时间才把它看完，关于此书我觉得前面没有多大的难度，和 《计算机网络自顶向下》 比起 还是很简单的，在我觉得比较困难的是存储过程，触发器的那几章，还有的是懂得了一门语言不是重点，重要的是要会使用和经常使用，这两点我还不行。下面我说说学习《MySQL必知必会》遇到的几个问题。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://whitesheep7.github.io/images/mysql_1.png">
+<meta property="og:image" content="http://whitesheep7.github.io/images/mysql_2.png">
+<meta property="og:image" content="http://whitesheep7.github.io/images/mysql_3.png">
+<meta property="og:image" content="http://whitesheep7.github.io/images/mysql_4.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7132436-c055534edfc17fd2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/654/format/webp">
+<meta property="og:image" content="http://www.p5w.net/kuaixun/201601/W020160122316175929415.jpg">
+<meta property="og:image" content="http://pics3.baidu.com/feed/d0c8a786c9177f3eecdc96f4259e46c19e3d5632.jpeg?token=b06070ddcf33f0eabf2aca984897bbfc">
+<meta property="article:published_time" content="2020-09-06T11:19:26.733Z">
+<meta property="article:modified_time" content="2020-05-21T01:25:59.204Z">
+<meta property="article:author" content="沈剑心">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://whitesheep7.github.io/images/mysql_1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="白羊" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">白羊</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://whitesheep7.GitHub.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-数据库学习之《mysql必知必会》" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B9%8B%E3%80%8Amysql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E3%80%8B/" class="article-date">
+  <time datetime="2020-09-06T11:19:26.733Z" itemprop="datePublished">2020-09-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>之前买了一本<code>《MySQL必知必会》</code>，最终拖拖拉拉用来一个星期的时间才把它看完，关于此书我觉得前面没有多大的难度，和 <code>《计算机网络自顶向下》</code> 比起 还是很简单的，在我觉得比较困难的是存储过程，触发器的那几章，还有的是懂得了一门语言不是重点，重要的是要会使用和经常使用，这两点我还不行。下面我说说学习<code>《MySQL必知必会》</code>遇到的几个问题。</p>
+<a id="more"></a>
+
+<h2 id="关于导入《MySQL必知必会》样例表的问题。"><a href="#关于导入《MySQL必知必会》样例表的问题。" class="headerlink" title="关于导入《MySQL必知必会》样例表的问题。"></a>关于导入<code>《MySQL必知必会》</code>样例表的问题。</h2><p>一开始我并不打算使用这本书的数据库，后来发现有些知识点比较难懂于是又开始去寻找如何下载，下面是我的总结。</p>
+<p><strong>首先</strong>去网页下载两个SQL脚本文件，所需要获得和运行的一切东西都可以在<a target="_blank" rel="noopener" href="https://forta.com/books/0672327120">https://forta.com/books/0672327120</a> 上找到。</p>
+<p>之后会有这个</p>
+<p><img src="/images/mysql_1.png"></p>
+<p>点击自己选择一个名字<img src="/images/mysql_2.png"></p>
+<p>如text，则底下会出现一个这个<img src="/images/mysql_3.png"></p>
+<p>再接下来点击进入其中选择<code>schemas</code><img src="/images/mysql_4.png"></p>
+<p>创建一个数据源，这一步和简单，你可以选择在命令行中进行，根据MySQL必知必会，选择名字<code>crashcourse</code>比较好，</p>
+<p>然后再在菜单栏中，选择File-&gt;Open SQL Script，分别找到create.sql脚本，点击下图位置运行<img src="https://upload-images.jianshu.io/upload_images/7132436-c055534edfc17fd2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/654/format/webp" alt="img"></p>
+<p>对于populate.sql文件，重复导入脚本以及运行步骤即可</p>
+<p>最后选中数据源并右键，<strong>选择Refresh All！！！（很重要）</strong></p>
+<p>今天学到了MySQL第十四章，对子查询这一步感到惊叹，能想出这样的方法—<img src="http://www.p5w.net/kuaixun/201601/W020160122316175929415.jpg" alt="点击查看源网页"></p>
+<p>真是老牛下蛋，牛逼坏了。    </p>
+<img src="http://pics3.baidu.com/feed/d0c8a786c9177f3eecdc96f4259e46c19e3d5632.jpeg?token=b06070ddcf33f0eabf2aca984897bbfc" alt="img" style="zoom:50%;" />
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://whitesheep7.github.io/2020/09/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B9%8B%E3%80%8Amysql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E3%80%8B/" data-id="cker0y4bq000bb0ws36z2esfk" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/09/06/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vim/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/09/06/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/09/06/%E6%B3%A8%E8%A7%A3%E5%8F%8D%E5%B0%84/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/06/%E7%94%A8%E6%95%85%E4%BA%8B%E8%AE%B2%E8%A7%A3Markdown/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/06/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vim/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/06/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E4%B9%8B%E3%80%8Amysql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E3%80%8B/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/06/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 沈剑心<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
